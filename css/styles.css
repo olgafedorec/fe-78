@@ -1,0 +1,395 @@
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", "sans-serif"; 
+  background-color: #FFFFFF;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+}
+/*---------HEADER--------*/
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-logo {
+  margin-right: 131px;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-logo {
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-item {
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+.header-tel {
+  text-decoration: none;
+}
+
+.header-button {
+  font-family: inherit;
+font-weight: 600;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+cursor: pointer;
+min-width: 160px;
+height: 40px;
+border: 1px solid #FF6C00;
+border-radius: 25px;
+background-color: transparent;
+margin-left: 43px;
+color: #FFFFFF;
+}
+
+/*---------HERO--------*/
+
+.hero-pre-title {
+  margin-bottom: 20px;
+}
+
+.section-hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-hero > .container {
+  display: flex;
+}
+
+.hero-wrap {
+  background-color: #504d4d;
+  flex-grow: 1;
+  padding: 272px 100px 208px;
+}
+
+.hero-list {
+  width: 100px;
+}
+
+.hero-pre-title {
+  font-family: 'Open Sans';
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 72px;
+line-height: 1.1;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.hero-text {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.66;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+max-width: 360px;
+}
+
+/*---------ABOUT--------*/
+
+.section-about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-about > .container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  max-width: 470px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-item {
+}
+
+.about-pre-title {
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+color: #303030;
+}
+
+
+.about-title {
+  margin-bottom: 20px;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+color: #303030;
+}
+
+.about-after-title {
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.66;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+.about-text {
+  margin-bottom: 42px;
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.85;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+.about-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
+  margin-left: 43px;
+}
+
+/*---------PRICES--------*/
+
+.section-prices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #504d4d;
+}
+
+.prices-pre-title {
+  margin-bottom: 20px;
+  font-family: 'Open Sans';
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-list {
+border: 1px solid #FFFFFF;
+width: calc((100% - 30px) /2);
+padding: 30px 20px 30px 20px;
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-item + .prices-item {
+  margin-top: 20px;
+}
+
+.prices-title {
+  margin-bottom: 44px;
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.prices-text {
+  font-family: 'Open Sans';
+font-weight: 400;
+font-size: 18px;
+line-height: 1.66;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+.prices-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.prices-button {
+  display: block;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
+  margin-left: 43px;
+  color: #FFFFFF;
+  margin: 0 auto;
+
+}
+/*--------BENEFITS---------*/
+
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits-pre-title {
+  margin-bottom: 20px;
+}
+
+.benefits-title {
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+
+}
+
+/*--------TEAM----------*/
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-pre-title {
+  font-family: 'Open Sans';;
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+text-transform: uppercase;
+color: #303030;
+margin-bottom: 20px;
+}
+
+.team-title {
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+color: #303030;
+margin-bottom: 44px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.team-item-title {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.team-item-text {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FF6C00;
+}
+
+/*--------PHOTO---------*/
+
+.photo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.photo-pre-title {
+  margin-bottom: 44px;
+}
+
+
+
+
+
