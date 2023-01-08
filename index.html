@@ -30,21 +30,23 @@
           /></a>
           <ul class="header-list list">
             <li class="header-item">
-              <a href="" class="header-link">About</a>
+              <a href="#about" class="header-link link">About</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">Services and prices</a>
+              <a href="#prices" class="header-link link">Services and prices</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">Barbers</a>
+              <a href="#barbers" class="header-link link">Barbers</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">Contacts</a>
+              <a href="#contacts" class="header-link link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <a href="tel:+380441111111" class="header-tel">+38 044 111 11 11</a>
-        <button type="button" class="header-button">Online-booking</button>
+        <a href="tel:+380441111111" class="header-tel link"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="header-button btn">Online-booking</button>
       </div>
     </header>
     <main>
@@ -53,12 +55,20 @@
         <div class="container">
           <ul class="hero-list list">
             <li class="hero-item">
-              <a href="" target="_blank" rel="noopener noreferrer nofollow"
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="hero-link link"
                 >Youtube</a
               >
             </li>
             <li class="hero-item">
-              <a href="" target="_blank" rel="noopener noreferrer nofollow"
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="link hero-link"
                 >instagram</a
               >
             </li>
@@ -74,7 +84,7 @@
         </div>
       </section>
       <!--about-->
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container">
           <ul class="about-list list">
             <li class="about-item">
@@ -108,12 +118,14 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-button">Online-booking</button>
+            <button type="button" class="about-button btn">
+              Online-booking
+            </button>
           </div>
         </div>
       </section>
       <!--services and  prices-->
-      <section class="section-prices">
+      <section class="section-prices" id="prices">
         <div class="container">
           <p class="prices-pre-title">Spend your time with the best masters</p>
           <h2 class="prices-title">Services and prices</h2>
@@ -156,40 +168,44 @@
             </ul>
           </div>
 
-          <button type="button" class="prices-button">online-booking</button>
+          <button type="button" class="prices-button btn">
+            online-booking
+          </button>
         </div>
       </section>
       <!--benefits-->
-      <section class="benefits">
+      <section class="section-benefits">
         <div class="container">
           <ul class="benefits-list list">
             <li class="benefits-item">
-              <span>600</span>
-              <p>Satisfied customers per day</p>
+              <span class="benefits-number">600</span>
+              <p class="benefits-item-text">Satisfied customers per day</p>
             </li>
             <li class="benefits-item">
-              <span>50</span>
-              <p>Awards for excellent service</p>
+              <span class="benefits-number">50</span>
+              <p class="benefits-item-text">Awards for excellent service</p>
             </li>
             <li class="benefits-item">
-              <span>20</span>
-              <p>Kyiv’s best barbers</p>
+              <span class="benefits-number">20</span>
+              <p class="benefits-item-text">Kyiv’s best barbers</p>
             </li>
             <li class="benefits-item">
-              <span>100</span>
-              <p>Gifts for regular customers</p>
+              <span class="benefits-number">100</span>
+              <p class="benefits-item-text">Gifts for regular customers</p>
             </li>
           </ul>
-          <p class="benefits-pre-title">Old traditional school</p>
-          <h2 class="benefits-title">Why people come to us?</h2>
-          <p class="benefits_text">
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+          <div class="benefits-wrap">
+            <p class="benefits-pre-title">Old traditional school</p>
+            <h2 class="benefits-title">¿Why people come to us?</h2>
+            <p class="benefits-text">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
         </div>
       </section>
       <!--team-->
-      <section class="team">
+      <section class="team" id="barbers">
         <div class="container">
           <p class="team-pre-title">For true enjoyers of the atmosphere</p>
           <h2 class="team-title">Our barbers</h2>
@@ -228,10 +244,10 @@
         </div>
       </section>
       <!--photo-->
-      <section class="photo">
+      <section class="section-photo">
         <div class="container">
           <p class="photo-pre-title">In Latin, "barba" means "beard"</p>
-          <ul class="list">
+          <ul class="list photo-list">
             <li>
               <img
                 src="./images/cut01.jpg"
@@ -268,43 +284,65 @@
         </div>
       </section>
       <!--contacts-->
-      <section>
+      <section class="section-contacts" id="contacts">
         <div class="container">
-          <h2>Online-booking</h2>
-          <h2>Contacts</h2>
-          <address>
-            <ul class="list">
-              <li>
-                <a
-                  href="https://goo.gl/maps/hMvp9aG8KkYUoixW8"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >st. Vasilkivska, 7A <br />
-                  Kyiv, 08132</a
-                >
-              </li>
-              <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-              <li>
-                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-              </li>
-            </ul>
-          </address>
-          <p>Working hours</p>
-          <p>Every day from 9:00 to 22:00</p>
+          <div class="contacts-booking">
+            <h2 class="contacts-title">Online-booking</h2>
+            <button type="button" class="contacts-button btn">send</button>
+          </div>
+          <div class="contacts-wrap">
+            <h2 class="contacts-title-two">Contacts</h2>
+            <address>
+              <ul class="list contacts-address-list">
+                <li>
+                  <a
+                    href="https://goo.gl/maps/hMvp9aG8KkYUoixW8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="contacts-link link"
+                    >st. Vasilkivska, 7A <br />
+                    Kyiv, 08132</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380441111111" class="contacts-link link"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:barbershop@email.com"
+                    class="contacts-link link"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-hours">Working hours</p>
+            <p class="contacts-hours-text">Every day from 9:00 to 22:00</p>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="section-footer">
       <div class="container">
-        <p>&copy;Copyright 2020</p>
-        <ul class="list">
+        <p class="footer-copyright">&copy;Copyright 2020</p>
+        <ul class="list footer-list">
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer nofollow"
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="hero-link link"
               >Youtube</a
             >
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer nofollow"
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="hero-link link"
               >instagram</a
             >
           </li>
