@@ -114,8 +114,11 @@ color: var(--white-color);
 
 /*---------HERO--------*/
 
-.hero-pre-title {
-  margin-bottom: 20px;
+.pre-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 .section-hero {
@@ -141,11 +144,15 @@ color: var(--white-color);
 }
 
 .hero-pre-title {
+display: flex;
+margin-bottom: 20px;
 font-weight: 600;
 font-size: 11px;
 line-height: 1.36;
 text-transform: uppercase;
 color: rgba(157, 164, 189, 0.6);
+align-items: center;
+gap: 20px;
 }
 
 .hero-title {
@@ -204,6 +211,9 @@ transform: rotate(-90deg);
 }
 
 .about-pre-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 20px;
 font-weight: 600;
 font-size: 11px;
@@ -246,10 +256,19 @@ color: #555555;
 .section-prices {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: var(--dark-grey-color);
+  background-color: #111319;
+  background-image: url(../images/background02.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .prices-pre-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 20px;
 font-weight: 600;
 font-size: 11px;
@@ -259,18 +278,35 @@ color: rgba(157, 164, 189, 0.6);
 }
 
 .prices-list {
-border: 1px solid var(--white-color);
 width: calc((100% - 30px) /2);
 padding: 30px 20px 30px 20px;
+}
+
+.prices-item::before {
+content: "";
+width: 100px;
+height: 1px;
+background-color: rgba(157, 164, 189, 0.12);
+flex-grow: 1;
 }
 
 .prices-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
 }
 
 .prices-item + .prices-item {
   margin-top: 20px;
+}
+
+.prices-list:first-child {
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .prices-title {
@@ -287,6 +323,10 @@ font-size: 18px;
 line-height: 1.66;
 letter-spacing: 0.02em;
 color: #9DA4BD;
+}
+
+.prices-text:first-child {
+  order: -1;
 }
 
 .prices-wrap {
@@ -307,30 +347,16 @@ color: #9DA4BD;
   padding-bottom: 120px;
 }
 
-.benefits-number {
-  font-weight: 700;
-font-size: 42px;
-line-height: 1.35;
-text-align: center;
-letter-spacing: 0.05em;
-color: var(--dark-grey-color);
-}
-
-.benefits-item-text {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-text-align: center;
-max-width: 122px;
-color: var(--dark-grey-color);
-}
-
 .benefits-pre-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 font-weight: 600;
 font-size: 11px;
 line-height: 1.36;
 text-transform: uppercase;
 color: var(--dark-grey-color);
+margin-bottom: 20px;
 }
 
 .benefits-title {
@@ -349,16 +375,12 @@ color: #555555;
 }
 
 .benefits-wrap {
- max-width: 500px;
- margin-left: 130px;
+ max-width: 500px; 
+  margin-left: 130px;
 }
 
 .section-benefits > .container {
   display: flex;
-}
-
-.benefits-pre-title {
-  margin-bottom: 20px;
 }
 
 .benefits-title {
@@ -366,8 +388,47 @@ color: #555555;
 }
 
 .benefits-list {
+ display: flex;
+ width: 370px;
+flex-wrap: wrap;
+ }
 
+.benefits-item {
+width: 122px;
+height: 93px;
+background-color: #F7F7F7;
+padding: 20px 24px;
 }
+
+.benefits-item .benefits-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  color: var(--dark-grey-color);
+  text-align: center;
+  display: block;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.benefits-item-text {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+  line-height: 1.36;
+  color: var(--dark-grey-color);
+  margin-top: 6px;
+  text-align: center;
+  display: block;
+  }
 
 /*--------TEAM----------*/
 
@@ -379,6 +440,9 @@ color: #555555;
 }
 
 .team-pre-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 font-weight: 600;
 font-size: 11px;
 line-height: 1.36;
@@ -463,6 +527,9 @@ justify-content: center;
 }
 
 .photo-pre-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 44px;
   padding-left: 80px;
 font-weight: 600;
